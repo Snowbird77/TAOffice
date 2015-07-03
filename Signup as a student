@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Title of the document</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<script src="studentsignup.js"></script>
+<style>
+body{
+  
+   margin-left: 20%;
+   margin-right:30%;
+   border: medium;
+   font-size: small;
+}
+
+h1{
+   text-decoration: underline;
+   text-shadow: 5px 5px 10px #4D4D4D;
+}
+
+legend{
+    color: #A0522D;
+}
+
+fieldset{
+    border-radius: .75em;
+  }
+  
+  textarea{
+   font-size: medium;
+  }
+  
+  footer{
+   text-align: center;
+   border-bottom: thin;
+   border-top: double;
+  }
+  
+</style>
+</head>
+
+<body>
+
+    <div>
+      <h1> Sign up as a Student</h1>
+        <form class="form-signin" action="index.php">
+            <h2>Please Fill in the form:</h2>
+            <fieldset>
+                <legend><strong>General Information</strong></legend>
+                 Firstname:<input type="text" id="firstname" name="firstname" placeholder="John" required="required"/>
+                 Lastname:<input type="text" id="lastname" name="lastname" placeholder="Smith" required="required"/><br/><br/>
+                 Phone:<input type="text" id="phoneFirstPart" name="phoneFirstPart" size="3" required="required"/>
+                 -<input type="text" id="phoneSecondPart" name="phoneSecondPart" size="3" required="required"/>
+                 -<input type="text" id="phoneThirdPart" name="phoneThirdPart" size="4" required="required"/>
+                 Email:<input type="email" id="email" name=email size="30" placeholder="john@smith.not.real"/><br/><br/>
+                 University ID:<input type="text" id="uid" name="uid" required="required" /><br/><br/>
+                 Account:<input type="text" id="account" name="account" required="required" />
+                 Password:<input type="password" id="password" name="password" required="required"/>
+                           
+            </fieldset>
+            <br/>
+            <fieldset>
+                <legend><strong>Class Information</strong></legend>
+                Class1: <input type="text" id="class1"  placeholder="CMSC389N"><br/>
+                Class2: <input type="text" id="class2"  placeholder="CMSC389N"><br/>
+                Class3: <input type="text" id="class3"  placeholder="CMSC389N"><br/>
+                Class4: <input type="text" id="class4"  placeholder="CMSC389N"><br/>
+                <a>Add another class</a>
+            </fieldset>
+            <br/>
+            <fieldset>
+                <input type="submit" value="Create Account" />
+                <input type="reset" value="Reset" />
+            </fieldset>
+        </form>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
